@@ -21,3 +21,6 @@ def processing():
     elif data['type'] == 'message_new':
         messageHandler.create_answer(data['object'], token)
         return 'ok'
+
+if __name__ == "__main__":
+app.run()
